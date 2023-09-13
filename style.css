@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    font-family: Minecraft Ten;
+    background-color: black;
+    color: white;
+}
+button
+{
+    font-family: Minecraft Ten;
+}
+.again
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 160px;
+    height: 60px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+
+}
+.between
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.7rem;
+}
+.title
+{
+    position: absolute;
+    left: 22%;
+    letter-spacing: 4px;
+    word-spacing: 50px;
+    top: 120px;
+    font-size: 5rem;
+}
+.hr
+{
+    position: absolute;
+    background-color: white;
+    width: 99%;
+    left: 0.5%;
+    top: 320px;
+    height: 8px;
+}
+.randomNum
+{
+    position: absolute;
+    z-index: 1;
+    background-color:white;
+    color: black;
+    width: 160px;
+    height: 140px;
+    font-size: 6rem;
+    left: 44%;
+    text-align: center;
+    top: 250px;
+}
+.inputnumber
+{
+    width: 220px;
+    height: 120px;
+    background-color:black;
+    outline-color: white;
+    outline-style: groove;
+    color:white;
+    font-size: 3rem;
+    font-family: Minecraft Ten;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 440px;
+    left: 270px;
+}
+.check
+{
+    position: absolute;
+    top: 590px;
+    left: 300px;
+    width: 160px;
+    height: 60px;
+    font-size: 2rem;
+}
+.strgues
+{
+    color:white;
+    font-size: 2rem;
+    position: absolute;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    top: 440px;
+    right: 350px;
+}
+.score{
+    color:white;
+    font-size: 2rem;
+    position: absolute;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    top: 560px;
+    right: 410px;
+}
+.highscore
+{
+    color:white;
+    font-size: 2rem;
+    position: absolute;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    top: 600px;
+    right: 410px;
+}
