@@ -24,7 +24,7 @@ btnChecked.addEventListener('click', () => {
         strGuess.innerText=`You lose`; 
         inputNumber.style.display="none";  
     }
-    else if(inputNumber.toString.length==0){strGuess.innerText="🚫No Value"}
+    else if(inputNumber.value.length==0){strGuess.innerText="🚫No Value"}
     else{
     score.innerText=`💯 Score: ${twenty-=1}`;
 
