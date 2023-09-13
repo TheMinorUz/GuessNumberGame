@@ -9,7 +9,7 @@ const randNum = document.querySelector('.randomNum');
 const again =document.querySelector('.again');
 
 btnChecked.addEventListener('click', () => {
-    score.innerText=`${twenty-=1}`;
+    score.innerText=`💯 Score: ${twenty-=1}`;
     if(score.value == 0 || score.value<0){
         document.body.style.backgroundColor='red';
         strGuess.innerText=`You lose`;   
@@ -33,10 +33,12 @@ function startGuess(){
         document.body.style.backgroundColor='green';
     }
 }
+
 again.addEventListener('click', () => {
     strGuess.innerText=`Start guessing...`;
-    highscore.innerText+=score.value;
+    highscore.innerText=`🥇 Highscore: ${score.value}`;
+    randNum.innerText='?';
     score.innerText=`20`;
     inputNumber.value='';
-    document.body.style.backgroundColor='white'
+    document.body.style.backgroundColor='black'
 })
