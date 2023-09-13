@@ -71,7 +71,7 @@ button
 }
 .inputnumber
 {
-    width: 220px;
+    width: 240px;
     height: 120px;
     background-color:black;
     outline-color: white;
@@ -83,7 +83,7 @@ button
     padding: 5px;
     position: absolute;
     top: 440px;
-    left: 270px;
+    left: 260px;
 }
 .check
 {
