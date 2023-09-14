@@ -6,7 +6,7 @@ counter.addEventListener("click",()=>{
 })
 
 
-const randomNumber = parseInt(Math.random()*20);
+let randomNumber = parseInt(Math.random()*20);
 let twenty=20;
 const inputNumber = document.querySelector('.inputnumber');
 const btnChecked = document.querySelector('.check');
@@ -21,7 +21,7 @@ score.innerText=`💯 Score: 20`;
 btnChecked.addEventListener('click', () => {
     if(twenty <=0){
         document.body.style.backgroundColor='red';
-        strGuess.innerText=`You lose`; 
+        strGuess.innerText=`💥You lose`; 
         inputNumber.style.display="none";  
     }
     else if(inputNumber.value.length==0){strGuess.innerText="🚫No Value"}
@@ -30,6 +30,7 @@ btnChecked.addEventListener('click', () => {
 
         startGuess();
     }
+    console.log(randomNumber);
     
 })
 
@@ -41,18 +42,25 @@ function startGuess(){
         strGuess.innerText=`Too low`;
     }
     else if(inputNumber.value == randomNumber){
-        strGuess.innerText=`You win`;
+        strGuess.innerText=`🏆You win`;
         randNum.innerText=randomNumber;
         document.body.style.backgroundColor='green';
+        inputNumber.style.display="none"
     }
 }
 
 again.addEventListener('click', () => {
-    twenty=20
+    twenty=20;
+    inputNumber.style.display="inherit";
     strGuess.innerText=`Start guessing...`;
     highscore.innerText=`🥇 Highscore: ${undefinedNumber}`;
     randNum.innerText='?';
     score.innerText=`💯Score: ${twenty}`;
     inputNumber.value='';
     document.body.style.backgroundColor='black'
+    randNum=randomNumber;
 })
+again.addEventListener('click',()=>{
+    randomNumber=parseInt(Math.random()*20);
+})
+undefinedNumber=20;
